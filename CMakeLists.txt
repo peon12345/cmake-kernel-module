@@ -23,7 +23,8 @@ execute_process(
 find_path(
         KERNELHEADERS_DIR
         include/linux/user.h
-        PATHS /usr/src/linux-headers-${KERNEL_RELEASE}
+        #PATHS /usr/src/linux-headers-${KERNEL_RELEASE}
+        PATHS /lib/modules/${KERNEL_RELEASE}/build
 )
 
 message(STATUS "Kernel release: ${KERNEL_RELEASE}")
