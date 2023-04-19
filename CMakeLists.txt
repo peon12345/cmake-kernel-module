@@ -47,4 +47,4 @@ add_custom_command(OUTPUT ${DRIVER_FILE}
 
 add_custom_target(driver ALL DEPENDS ${DRIVER_FILE})
 # Parse c files
-add_library(dummy_target hello.c)
+#add_library(dummy_target hello.c)
